@@ -1,0 +1,15 @@
+<div class="fundo">
+    <section class="area-login">
+        <div class="login">
+            <div>
+                <img src="assets/imgs/My-project-1.png" alt="">
+            </div>
+            <form name="form" method="get">
+                <input type="text" id="Nome" placeholder="nome de usuário" ngModel="nome" [(ngModel)]="Nome">
+                <input type="password" id="Senha" placeholder="senha do usuário" ngModel="senha" [(ngModel)]="Senha">
+                <button type="submit" name="entrar" value="entrar" (click)="enviar()">Entrar</button>
+            </form>
+            <p>Ainda nao tem uma conta?<a routerLink="#">criar conta</a></p>
+        </div>
+    </section>
+</div>

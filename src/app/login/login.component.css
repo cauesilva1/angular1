@@ -1,0 +1,81 @@
+.fundo{
+    background-image: url(../../assets\imgs\imagem-do-login.png);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.area-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    background-color: #181920b4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+}
+
+.login input{
+    margin-top: 30px;
+    background-color: #252a34;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 10px;
+    color: #CBD0F7;
+    padding-left: 10px;
+}
+
+.login img{
+    width: 200px;
+    height: auto;
+}
+
+.input::placeholder{
+    color: #CBD0F7;
+    font-size: 14px;
+}
+
+button{
+    height: 45px;
+    color: #CBD0F7;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #5568FE;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.6s;
+    box-shadow: 0 0 40px #5568FE;
+}
+
+p{
+    color: #CBD0F7;
+}
+
+a{
+    color: #5568FE;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+}

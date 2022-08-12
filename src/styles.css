@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: monstserrat;
+    background-color: #131313;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    /* background: linear-gradient(90deg, rgba(255, 0, 0, 0.842) 47.92%, rgba(0, 0, 0, 0.932) 51.56%); */
+}
+
+/* label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+} */
+.nome img{
+    height: 60px;
+    width: 130px;
+    margin-left: 35px;
+    margin-top: 7px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active,
+a:hover {
+    border: 1px solid #ffffff;
+    transition: .5s;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 0 100px #b3aeaed0;
+}
+
+.logo img {
+    width: 100%;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: rgba(206, 49, 49, 0.582) 0px 30px 40px -7px;
+}
+
+.column ul{
+    width: 23%;
+    padding: 10px;
+
+}
+.column li{
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    width: 23%;
+    vertical-align: top;
+    margin-top: 5%;  
+}
+
+.column img {
+    top: 1200px;
+    opacity: 0.8;
+    cursor: pointer;
+    height: 250px;
+    width: 210px;
+    margin-left: 30%;
+    border-radius: 10px;
+}
+
+.jogo1:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 100px #49d2d6d0;
+}
+.jogo2:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 100px #eaedf5d0;
+}
+.jogo3:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 100px #d16c0ed0;
+}
+.jogo4:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 100px #ffffffd0;
+}
+.jogo5:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 100px #001dbed0;
+}
+.jogo6:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 100px #1e2992d0;
+}
+.jogo7:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 100px #ffffffd0;
+}
+.jogo8:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 100px #c01a1ad0;
+}
+
+.column button{
+    font-size: 20px;
+    background-color: #ffffff59;
+    margin-left:10%;
+    border: 3px solid transparent;
+    border-radius: 30%;
+    color: #ffffffdc;
+    text-transform: uppercase;
+    margin-top: -10%;
+    margin-right: 30%;
+    font-family: 'Edu SA Beginner', cursive;
+    position: relative;
+}
+
+.column button:hover{
+    transition: 0.5s;
+    background-color: #ff0000a6 ;
+    box-shadow: 0 0 100px #ff0000d0;
+}
+
+.container {
+    display: none;
+    width:100%;
+    
+}
+.img .fundo{
+    height: 500px;
+    width: 100%;
+}
+
+footer h1{
+    font-family: 'Jacques Francois Shadow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #ff0000;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.imgf img{
+    height: 40%;
+    width: 40%;
+    margin-left: 55%;
+    margin-top: 10%;
+}
+
+.linha{
+    margin-top: 40px;
+    width: 100%;
+    height: 3px;
+    background-color: #0000008f;
+    box-shadow: 10px 10px 10px #ff0101dc;
+}
+
+.linha2{
+    width: 100%;
+    height: 3px;
+    background-color: #5050508f;
+    margin-top: 30px;
+}
+
+.metamorfose h2{
+    color: #817f7f;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 15%;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    animation: 
+    morph-effect 10s 
+    infinite ease-in-out;
+}
+
+h2:nth-child(1){
+    animation-delay: -10s;
+}
+
+h2:nth-child(2){
+    animation-delay: -5s;
+}
+
+@keyframes morph-effect{
+0%, 20%, 100% {
+    filter: blur(0px);
+    opacity: 1;
+}
+40%, 80% {
+    filter: blur(16px);
+    opacity: 0;
+}
+}
+.rodape{
+    background-color: #0000009c;
+}
+
+.rodape li{
+    margin-top: 1%;
+    text-align: center;
+}
+.rodape ul{
+    margin-top: -12px;
+}
+
+.rodape a{
+        color: #ffffff;
+}
