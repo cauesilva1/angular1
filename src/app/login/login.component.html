@@ -6,6 +6,7 @@
             </div>
             <form name="form" method="get">
                 <input type="text" id="Nome" placeholder="nome de usuário" ngModel="nome" [(ngModel)]="Nome">
+                <input type="email" id="email" placeholder="email do usuário" ngModel="email" [(ngModel)]="email">
                 <input type="password" id="Senha" placeholder="senha do usuário" ngModel="senha" [(ngModel)]="Senha">
                 <button type="submit" name="entrar" value="entrar" (click)="enviar()">Entrar</button>
             </form>
