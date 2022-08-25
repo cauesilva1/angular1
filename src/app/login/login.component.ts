@@ -11,9 +11,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  Nome = document.getElementById('#Nome')!;
+  Usuario = document.getElementById('#Nome')!;
   Senha = document.getElementById('#Senha')!;
-  email = document.getElementById('#email')!;
 
   enviar(){
           alert ("cadastro concluido com sucesso")

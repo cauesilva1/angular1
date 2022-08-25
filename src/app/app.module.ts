@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
+import { MatSnackBarModule} from '@angular/material/snack-bar';
+import { VizualizarComponent } from './login/cadastro/vizualizar/vizualizar.component';
 
 
 @NgModule({
@@ -17,12 +19,14 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
+    VizualizarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

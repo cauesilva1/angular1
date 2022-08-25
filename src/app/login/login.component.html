@@ -4,13 +4,12 @@
             <div>
                 <img src="assets/imgs/My-project-1.png" alt="">
             </div>
-            <form name="form" method="get">
-                <input type="text" id="Nome" placeholder="nome de usuário" ngModel="nome" [(ngModel)]="Nome">
-                <input type="email" id="email" placeholder="email do usuário" ngModel="email" [(ngModel)]="email">
-                <input type="password" id="Senha" placeholder="senha do usuário" ngModel="senha" [(ngModel)]="Senha">
+            <form name="form">
+                <input type="text"placeholder="nome de usuário" NgModel="Nome">
+                <input type="password" placeholder="senha do usuário"  NgModel="Senha">
                 <button type="submit" name="entrar" value="entrar" (click)="enviar()">Entrar</button>
             </form>
-            <p>Ainda nao tem uma conta?<a routerLink="#">criar conta</a></p>
+            <p>já tem conta?<a routerLink="/login/cadastro">entre aqui</a></p>
         </div>
     </section>
 </div>
