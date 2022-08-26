@@ -9,7 +9,7 @@
                 <input type="password" placeholder="senha do usuário"  NgModel="Senha">
                 <button type="submit" name="entrar" value="entrar" (click)="enviar()">Entrar</button>
             </form>
-            <p>já tem conta?<a routerLink="/login/cadastro">entre aqui</a></p>
+            <p>já tem conta?<a routerLink="/login/cadastro" (click)="ngOnInit()">entre aqui</a></p>
         </div>
     </section>
 </div>
