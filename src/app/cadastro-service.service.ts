@@ -8,14 +8,15 @@ import { Cadastro } from './cadastro.model';
 })
 export class CadastroServiceService {
 
+  
   baseUrl =   "http://localhost:3001/users"
-
   
   constructor(private http: HttpClient) {
-   }
-
-  read(): Observable<Cadastro[]>{
-    return this.http.get<Cadastro[]>(this.baseUrl)
   }
+  
+   read(): Observable<Cadastro[]>{
+     return this.http.get<Cadastro[]>(this.baseUrl)
+  }
+
 }
 

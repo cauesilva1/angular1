@@ -3,29 +3,39 @@
         <div class="login">
             <form name="form">
                 <h1>CADASTROS</h1>
-                
-                <table>
+                <table mat-table class="full-width-table" matSort aria-label="Elements" [dataSource]="cadastros">
 
-                      <th>Id</th>
-                      <td mat-cell *matCellDef="let row">{{row.id}}</td>
-       
-                      <th>Usuários</th>
-                      <td mat-cell *matCellDef="let row">{{row.usuario}}</td>
-        
-                      <th>Senha</th>
-                      <td mat-cell *matCellDef="let row">{{row.senha}}</td>
-        
-                      <th>Ações</th>
-                      <td mat-cell *matCellDef="let row">
-                        <a routerLink="/cadastro/update/{{row.id}} ">
-                          <button>edit</button>
-                        </a>
-                        <a routerLink="/cadastro/delete/{{row.id}} ">
-                          <button>delet</button>
-                        </a>
-                      </td>
-                
-                  </table>
+                    <ng-container matColumnDef="id">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+                        <td mat-cell *matCellDef="let row">{{row.id}}</td>
+                      </ng-container>
+         
+                      <ng-container matColumnDef="usuario">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>Usuários</th>
+                        <td mat-cell *matCellDef="let row">{{row.usuario}}</td>
+                      </ng-container>
+          
+                      <ng-container matColumnDef="password">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>Senha</th>
+                        <td mat-cell *matCellDef="let row">{{row.password}}</td>
+                      </ng-container>
+          
+          
+                      <ng-container matColumnDef="action">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>Ações</th>
+                        <td mat-cell *matCellDef="let row">
+                          <button>
+                            <i class="material-icons">edit</i>
+                          </button>
+                          <button>
+                            <i class="material-icons">delete</i>
+                          </button>
+                        </td>
+                      </ng-container>
+                  
+                      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
             </form>
         </div>
     </section>
