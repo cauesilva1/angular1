@@ -19,5 +19,4 @@ export class VizualizarComponent implements OnInit {
       this.cadastros = cadastros
     })
   }
-
 }

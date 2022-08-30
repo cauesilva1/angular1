@@ -5,9 +5,9 @@
                 <img src="assets/imgs/My-project-1.png" alt="">
             </div>
             <form name="form" method="post">
-                <input type="text"placeholder="nome de usuário" matInput NgModel="cadastro.usuario" name="usuario">
-                <input type="password" placeholder="senha do usuário" matInput NgModel="cadastro.password" name="senha">
-                <button type="submit" name="entrar" value="entrar" (click)="createCadastro()">Entrar</button>
+                <input type="text"placeholder="nome de usuário" NgModel name="usuario" id="usuario">
+                <input type="password" placeholder="senha do usuário" NgModel name="password" id="password">
+                <button type="submit" name="entrar" value="entrar" click="createCadastro()">Entrar</button>
             </form>
             <p>já tem conta?<a routerLink="/login/cadastro" (click)="ngOnInit()">entre aqui</a></p>
         </div>

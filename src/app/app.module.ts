@@ -23,6 +23,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { CriarComponent } from './login/cadastro/criar/criar.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     FooterComponent,
     LoginComponent,
     VizualizarComponent,
+    CriarComponent,
   ],
   imports: [
     BrowserModule,

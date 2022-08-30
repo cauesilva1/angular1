@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CriarComponent } from './cadastro/criar/criar.component';
+import { CadastroServiceService } from '../cadastro-service.service';
+import { Cadastro } from '../cadastro.model';
 
 @Component({
   selector: 'app-login',
@@ -7,14 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+
+  cadastro: Cadastro = {
+    usuario: '',
+    password:' '  
+  }
+
+  constructor(private cadastroservice: CadastroServiceService) { }
 
   ngOnInit(): void {
   }
   Usuario = document.getElementById('#Nome')!;
   Senha = document.getElementById('#Senha')!;
 
-  enviar(){
-          alert ("cadastro concluido com sucesso")
+  createCadastro(): void{
+    this.cadastroservice.create(this.cadastro).subscribe(() => {
+    this.cadastroservice.showMenssege( 'usuario Cadastrado')
+    })
   }
 }
